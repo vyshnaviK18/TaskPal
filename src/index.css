@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-primary-50 to-secondary-50 min-h-screen font-sans text-gray-800;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg transition-all duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-300 focus:outline-none;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-2 focus:ring-secondary-300 focus:outline-none;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-2 focus:ring-accent-300 focus:outline-none;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md p-4 transition-all duration-200;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br;
+  }
+  
+  .gradient-blue {
+    @apply from-primary-400 to-primary-600;
+  }
+  
+  .gradient-teal {
+    @apply from-secondary-400 to-secondary-600;
+  }
+  
+  .gradient-orange {
+    @apply from-accent-400 to-accent-600;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500 focus:outline-none transition-all duration-200;
+  }
+  
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .task-priority-1 {
+    @apply border-l-4 border-gray-300;
+  }
+  
+  .task-priority-2 {
+    @apply border-l-4 border-primary-300;
+  }
+  
+  .task-priority-3 {
+    @apply border-l-4 border-accent-300;
+  }
+  
+  .task-priority-4 {
+    @apply border-l-4 border-warning-400;
+  }
+  
+  .task-priority-5 {
+    @apply border-l-4 border-error-500;
+  }
+  
+  .nested-task {
+    @apply ml-6;
+  }
+  
+  .page-container {
+    @apply max-w-7xl mx-auto p-4 sm:p-6;
+  }
+  
+  .auth-container {
+    @apply max-w-md mx-auto p-6 rounded-2xl shadow-xl bg-white mt-12;
+  }
+}
